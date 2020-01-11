@@ -1,9 +1,22 @@
+body{
+  display: block;
+  margin: 0;
+  background-color: #ececec;
+}
+
+nav {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  max-width: 680px;
+  width: 100%;
+}
+
 main {
   align-content: center;
   box-sizing: border-box;
   display: grid;
-  font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
-    'Arial', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   hyphens: auto;
   line-height: 1.65;
   margin: 0 auto;
@@ -14,6 +27,7 @@ main {
 }
 h1 {
   font-size: 45px;
+  text-align: left;
 }
 h2 {
   margin-top: 1.5em;
@@ -22,14 +36,10 @@ p {
   font-size: 16px;
 }
 a {
-  border-bottom: 1px solid white;
-  color: #0076ff;
+  color: black;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.2s ease;
-}
-a:hover {
-  border-bottom: 1px solid #0076ff;
+  transition: all 500ms ease;
 }
 code,
 pre {
@@ -41,4 +51,64 @@ pre {
 code:before,
 code:after {
   content: '\`';
+}
+
+nav > h1 {
+  transition: all 500ms ease;
+  display: inline;
+  float: left;
+  margin: 0;
+  border-bottom: 3px solid black;
+  line-height: 1em;
+}
+
+.no-underline {
+  border-bottom: none;
+}
+.no-underline:hover {
+  color: black;
+  background-color: #ececec;
+  border-bottom: none;
+}
+
+nav > h1:hover {
+  background-color: black;
+  color: white;
+  border-bottom: none;
+  text-decoration: line-through;
+}
+
+nav > ul {
+  display: inline-block;
+  list-style: none;
+  float: right;
+}
+
+nav a:hover {
+  color: white;
+  background-color: black;
+  text-decoration: line-through;
+}
+
+nav > ul > a:hover {
+  background-color: transparent;
+  text-decoration: none!important;
+}
+
+nav > ul > li, nav > ul > a > li {
+  transition-property: background-color;
+  transition: ease-in-out 500ms;
+  display: inline-block;
+  padding: 0 10px;
+  font-weight: 500;
+  line-height: 30px;
+  vertical-align: middle;
+}
+
+.svg-name {
+  transition-property: background-color;
+  transition: ease-in-out 500ms;
+}
+.svg-name:hover {
+  background-color: black;
 }
