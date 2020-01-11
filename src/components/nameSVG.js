@@ -2,7 +2,7 @@ import React from 'react'
 import MtSvgLines from 'react-mt-svg-lines';
 
 export default (props) => (
-  <MtSvgLines animate={ true } duration={ 2500 } playback="infinite alternate both" timing="ease-in-out" >
+  <MtSvgLines stagger={ 50 } animate={ 1000 } duration={ 2500 } playback="infinite alternate both" timing="ease-in-out" >
     <svg width={"100%"} height={"100%"} viewBox="0 0 575.903 70.763" {...props}>
       <g
         aria-label="Richard Moot"
@@ -12,7 +12,7 @@ export default (props) => (
         fontFamily="sans-serif"
         letterSpacing={0}
         wordSpacing={0}
-        fill="#f3f3f3"
+        fill="#ececec"
         stroke="#000"
         >
         <path
