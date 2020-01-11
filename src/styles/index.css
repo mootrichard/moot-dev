@@ -5,9 +5,11 @@ body{
 }
 
 nav {
+  z-index:1;
   display: block;
   margin: 0 auto;
-  position: absolute;
+  position: fixed;
+  top: 0;
   max-width: 680px;
   width: 100%;
 }
@@ -22,7 +24,6 @@ main {
   margin: 0 auto;
   max-width: 680px;
   min-height: 100vh;
-  padding: 72px 0;
   text-align: center;
 }
 h1 {
