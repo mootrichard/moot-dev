@@ -21,10 +21,10 @@ export default ({ children }) => (
           <Link to="/blog">blog</Link>
         </li>
         <li>
-          <Link to="https://github.com/mootrichard">github</Link>
+          <a href="https://github.com/mootrichard">github</a>
         </li>
         <li>
-          <Link to="https://stackoverflow.com/users/7013970/mootrichard">stack overflow</Link>
+          <a href="https://stackoverflow.com/users/7013970/mootrichard">stack overflow</a>
         </li>
       </ul>
     </nav>
