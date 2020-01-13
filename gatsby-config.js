@@ -10,7 +10,7 @@ module.exports = {
         name: 'Gatsby + Node.js (TypeScript) API',
         short_name: 'Gatbsy + Node.js (TypeScript)',
         start_url: '/',
-        icon: 'src/images/gatsby-icon.png'
+        icon: 'src/images/icon-48x48.png'
       }
     }
   ]
