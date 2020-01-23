@@ -13,5 +13,6 @@ module.exports = {
         icon: 'src/images/icon-48x48.png'
       }
     }
-  ]
+  ],
+  pathPrefix: "/moot-dev",
 };
